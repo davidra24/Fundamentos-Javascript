@@ -29,7 +29,17 @@ var precioVino = 200.3;
 
 console.log('precio de vino: ', precioVino);
 
-var total = precioVino * 3;
+var total = Math.round(precioVino * 100 * 3) / 100;
+var totalStr = total.toFixed(3);
+var totalFlt = parseFloat(totalStr);
 
 console.log('Total compra: ', total);
+console.log('Total compra con decimales: ', totalStr);
+console.log('Total parse float: ', totalFlt);
+
+var pizza = 8;
+var personas = 2;
+
+var porcionesPorPersona = pizza / personas;
+console.log('Porciones de pizza por persona: ', porcionesPorPersona);
 
